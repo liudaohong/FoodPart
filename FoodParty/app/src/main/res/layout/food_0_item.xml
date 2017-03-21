@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        app:cardElevation="3dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/iv"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_tab_my"
+        android:layout_width="match_parent"
+        android:layout_height="196dp" />
+    <TextView
+        android:text="food"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv"
+        android:textSize="10sp"
+      />
+    <View
+        android:background="#999"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="26dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:id="@+id/tot"
+        android:src="@drawable/ic_tab_library_select"
+      />
+
+    <TextView
+        android:textSize="8sp"
+        android:layout_width="0dp"
+        android:layout_weight="1.5"
+        android:layout_height="24dp"
+        android:gravity="center"
+        android:id="@+id/name"
+        android:text="name"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@+id/tot"
+        android:layout_alignTop="@+id/tot"
+        />
+    <Button
+
+        android:textSize="6sp"
+        android:id="@+id/good"
+        android:text="1312"
+        android:drawableLeft="@mipmap/ic_home_agree"
+        android:background="#0000"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="24dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
